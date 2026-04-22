@@ -1,0 +1,423 @@
+.page {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.pageGlowLeft,
+.pageGlowRight {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.pageGlowLeft {
+  background: radial-gradient(circle at 18% 18%, rgba(56, 189, 248, 0.18), transparent 26%);
+}
+
+.pageGlowRight {
+  background: radial-gradient(circle at 82% 14%, rgba(59, 130, 246, 0.18), transparent 24%);
+}
+
+.container {
+  position: relative;
+  width: min(1280px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 56px;
+}
+
+.topGrid {
+  display: grid;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.heroPanel,
+.workflowPanel,
+.galleryPanel,
+.ctaPanel,
+.highlightCard,
+.workflowCard {
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 28px;
+}
+
+.heroPanel {
+  position: relative;
+  overflow: hidden;
+  padding: 24px 24px 32px;
+  background: linear-gradient(145deg, rgba(6, 14, 28, 0.94), rgba(11, 30, 52, 0.82));
+}
+
+.heroGlow {
+  position: absolute;
+  top: -90px;
+  right: -60px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.34), rgba(59, 130, 246, 0));
+}
+
+.badge,
+.galleryChip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.badge {
+  border: 1px solid rgba(96, 165, 250, 0.28);
+  background: rgba(59, 130, 246, 0.14);
+  color: #dbeafe;
+}
+
+.heroTitle,
+.galleryTitle,
+.ctaTitle {
+  margin: 0;
+  color: var(--shell-text-primary);
+  font-family: var(--font-display);
+}
+
+.heroTitle {
+  max-width: 760px;
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 0.95;
+}
+
+.heroDescription,
+.highlightDescription,
+.workflowDescription,
+.ctaDescription {
+  color: var(--shell-text-secondary);
+}
+
+.heroDescription {
+  max-width: 720px;
+  margin: 20px 0 0;
+  font-size: clamp(1rem, 2vw, 1.14rem);
+  line-height: 1.75;
+}
+
+.buttonRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.buttonLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-align: center;
+  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.buttonLink:hover {
+  transform: translateY(-1px);
+}
+
+.buttonLink--primary {
+  border: 1px solid rgba(191, 219, 254, 0.28);
+  background: linear-gradient(135deg, #3b82f6, #4f8df0);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.28);
+  color: #f8fbff;
+}
+
+.buttonLink--secondary {
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: transparent;
+  color: var(--shell-text-primary);
+}
+
+.highlightsGrid {
+  display: grid;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.highlightCard {
+  padding: 20px;
+  background: rgba(8, 17, 31, 0.72);
+}
+
+.highlightMetric {
+  color: #60a5fa;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.highlightTitle,
+.workflowTitle {
+  margin: 6px 0 0;
+  color: var(--shell-text-primary);
+  font-size: 1.1rem;
+}
+
+.highlightDescription {
+  margin: 8px 0 0;
+  line-height: 1.7;
+}
+
+.workflowPanel {
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+  background: linear-gradient(180deg, rgba(8, 17, 31, 0.94), rgba(5, 13, 24, 0.84));
+}
+
+.sectionOverline,
+.ctaActionsLabel {
+  color: var(--shell-text-secondary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.workflowCard {
+  padding: 18px;
+  background: rgba(11, 19, 34, 0.82);
+}
+
+.workflowEyebrow {
+  color: #60a5fa;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.workflowDescription {
+  margin: 8px 0 0;
+  line-height: 1.7;
+}
+
+.galleryPanel {
+  margin-bottom: 24px;
+  padding: 20px 20px 24px;
+  background: rgba(8, 17, 31, 0.8);
+}
+
+.galleryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.galleryTitle {
+  margin-top: 6px;
+  max-width: 620px;
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+  line-height: 1;
+}
+
+.galleryChip {
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  color: var(--shell-text-primary);
+}
+
+.ctaPanel {
+  position: relative;
+  overflow: hidden;
+  padding: 24px 24px 28px;
+  background: linear-gradient(135deg, rgba(6, 14, 28, 0.94), rgba(8, 17, 31, 0.82));
+}
+
+.ctaGlow {
+  position: absolute;
+  top: -80px;
+  right: -70px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0));
+}
+
+.ctaHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.ctaCopy,
+.ctaActions {
+  position: relative;
+  z-index: 1;
+}
+
+.ctaCopy {
+  max-width: 700px;
+}
+
+.ctaTitle {
+  margin-top: 6px;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1;
+}
+
+.ctaDescription {
+  margin: 10px 0 0;
+  line-height: 1.75;
+}
+
+.ctaActions {
+  min-width: 420px;
+}
+
+.ctaActionsLabel {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ctaActionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ctaActionCard {
+  display: flex;
+  width: 100%;
+  min-height: 164px;
+  padding: 0;
+  border-radius: 24px;
+  text-align: left;
+  transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s, background 0.18s;
+}
+
+.ctaActionCard:hover {
+  transform: translateY(-3px);
+}
+
+.ctaActionCard--primary {
+  border: 1px solid rgba(191, 219, 254, 0.28);
+  background: linear-gradient(135deg, #3b82f6, #4f8df0);
+  box-shadow: 0 26px 54px rgba(59, 130, 246, 0.34);
+  color: #f8fbff;
+}
+
+.ctaActionCard--secondary {
+  border: 1px solid rgba(59, 130, 246, 0.38);
+  background: linear-gradient(180deg, rgba(5, 12, 22, 0.98), rgba(8, 17, 31, 0.94));
+  box-shadow: 0 18px 40px rgba(2, 8, 18, 0.44);
+  color: #dbeafe;
+}
+
+.ctaActionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px;
+  gap: 10px;
+}
+
+.ctaActionTagRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.ctaActionTag {
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ctaActionTag--primary {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.16);
+  color: #eff6ff;
+}
+
+.ctaActionTag--secondary {
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  background: rgba(59, 130, 246, 0.12);
+  color: #93c5fd;
+}
+
+.ctaActionArrow {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.ctaActionTitle {
+  margin: 0;
+  font-size: clamp(22px, 4vw, 26px);
+  font-weight: 800;
+  line-height: 1.15;
+  max-width: 220px;
+}
+
+.ctaActionHint {
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.55;
+  max-width: 260px;
+}
+
+.ctaActionHint--primary {
+  color: rgba(239, 246, 255, 0.88);
+}
+
+.ctaActionHint--secondary {
+  color: rgba(191, 219, 254, 0.84);
+}
+
+@media (min-width: 768px) {
+  .highlightsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .topGrid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(340px, 0.82fr);
+  }
+}
+
+@media (max-width: 960px) {
+  .ctaHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ctaActions {
+    min-width: 100%;
+  }
+
+  .ctaActionsLabel {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 20px, 1280px);
+    padding: 24px 0 40px;
+  }
+
+  .ctaActionsGrid {
+    grid-template-columns: 1fr;
+  }
+}

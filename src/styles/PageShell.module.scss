@@ -1,0 +1,24 @@
+.shell {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.shellWide {
+  width: 100vw;
+}
+
+.loadingState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-height: 0;
+  padding: 24px;
+  color: var(--shell-text-secondary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  text-align: center;
+}

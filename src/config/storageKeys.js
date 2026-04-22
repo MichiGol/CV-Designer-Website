@@ -1,0 +1,8 @@
+export const STORAGE_KEYS = {
+  canvasElements: "cv-designer.canvas.elements",
+  canvasTemplateSeed: "cv-designer.canvas.template-seed",
+  canvasScale: "cv-designer.canvas.scale",
+  canvasSnap: "cv-designer.canvas.snap",
+  templateCV: "cv-designer.template.cv",
+  templateSettings: "cv-designer.template.settings",
+};
