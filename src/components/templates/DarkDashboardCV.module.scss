@@ -1,0 +1,342 @@
+.shell {
+  background: var(--dashboard-page-background);
+  color: var(--dashboard-body-text);
+  padding: var(--dashboard-page-padding);
+}
+
+.shellPreview {
+  min-height: var(--dashboard-page-min-height);
+}
+
+.shellExport {
+  box-sizing: border-box;
+}
+
+.card {
+  padding: var(--dashboard-card-padding);
+  border: 1px solid var(--dashboard-card-border);
+  border-radius: var(--dashboard-card-radius);
+  background: var(--dashboard-card-background);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--dashboard-header-gap);
+  margin-bottom: var(--dashboard-header-margin-bottom);
+}
+
+.headerMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.headerMetaPhotoContact {
+  min-width: var(--dashboard-header-meta-photo-contact-width);
+}
+
+.headerMetaPhotoOnly {
+  min-width: var(--dashboard-header-meta-photo-only-width);
+}
+
+.headerMetaContactOnly {
+  min-width: var(--dashboard-header-meta-contact-only-width);
+}
+
+.heading {
+  margin-bottom: var(--dashboard-heading-margin-bottom);
+  color: var(--dashboard-heading-primary);
+  font-family: var(--dashboard-mono-font);
+  font-size: var(--dashboard-heading-size);
+  font-weight: var(--dashboard-heading-weight);
+  letter-spacing: var(--dashboard-heading-letter-spacing);
+  text-transform: uppercase;
+}
+
+.headingSecondary {
+  color: var(--dashboard-heading-secondary);
+}
+
+.name {
+  margin: 0;
+  color: var(--dashboard-strong-text);
+  font-family: var(--dashboard-display-font);
+  font-size: var(--dashboard-name-size);
+  font-weight: var(--dashboard-name-weight);
+  letter-spacing: var(--dashboard-name-letter-spacing);
+  line-height: var(--dashboard-name-line-height);
+}
+
+.title {
+  margin: var(--dashboard-title-margin-top) 0 0;
+  color: var(--dashboard-secondary-text);
+  font-family: var(--dashboard-body-font);
+  font-size: var(--dashboard-title-size);
+}
+
+.contactList {
+  display: grid;
+  gap: var(--dashboard-contact-gap);
+  min-width: 0;
+}
+
+.contactLine {
+  display: flex;
+  align-items: center;
+  gap: var(--dashboard-contact-line-gap);
+  color: var(--dashboard-heading-secondary);
+  font-family: var(--dashboard-body-font);
+  font-size: var(--dashboard-base-size);
+}
+
+.photoContactGrid {
+  display: grid;
+  gap: var(--dashboard-photo-grid-gap);
+}
+
+.photoContactGridWithContact {
+  align-items: center;
+  grid-template-columns: var(--dashboard-photo-grid-with-contact-columns);
+  justify-content: stretch;
+}
+
+.photoContactGridPhotoOnly {
+  align-items: flex-start;
+  grid-template-columns: var(--dashboard-photo-grid-photo-only-columns);
+  justify-content: end;
+}
+
+.photoFrame {
+  :global([data-canvas-image-frame="true"]) {
+    width: var(--dashboard-photo-width);
+    height: var(--dashboard-photo-height);
+    border: 1px solid var(--dashboard-accent-medium);
+    border-radius: var(--dashboard-card-radius);
+    background: var(--dashboard-photo-background);
+    box-shadow: var(--dashboard-photo-shadow);
+  }
+}
+
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: var(--dashboard-grid-columns);
+  gap: var(--dashboard-grid-gap);
+}
+
+.column {
+  display: grid;
+  gap: var(--dashboard-grid-gap);
+}
+
+.summary {
+  margin: 0;
+  color: var(--dashboard-secondary-text);
+  font-family: var(--dashboard-body-font);
+  font-size: var(--dashboard-summary-size);
+  line-height: var(--dashboard-summary-line-height);
+}
+
+.entryStack {
+  display: grid;
+  gap: var(--dashboard-entry-gap);
+}
+
+.experienceCard {
+  padding: var(--dashboard-experience-card-padding);
+  border: 1px solid var(--dashboard-card-border);
+  border-radius: var(--dashboard-experience-card-radius);
+  background: var(--dashboard-nested-card-background);
+}
+
+.experienceHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--dashboard-experience-header-gap);
+  margin-bottom: var(--dashboard-experience-header-margin-bottom);
+}
+
+.experienceRole {
+  margin: 0;
+  color: var(--dashboard-strong-text);
+  font-family: var(--dashboard-display-font);
+  font-size: var(--dashboard-experience-role-size);
+  font-weight: var(--dashboard-section-title-weight);
+}
+
+.experienceCompany {
+  margin-top: var(--dashboard-meta-margin-top);
+  color: var(--dashboard-accent);
+  font-family: var(--dashboard-body-font);
+  font-size: var(--dashboard-experience-company-size);
+  font-weight: var(--dashboard-section-meta-weight);
+}
+
+.periodBadge {
+  padding: var(--dashboard-period-badge-padding);
+  border: 1px solid var(--dashboard-badge-border);
+  border-radius: var(--dashboard-period-badge-radius);
+  background: var(--dashboard-badge-background);
+  color: var(--dashboard-heading-secondary);
+  font-family: var(--dashboard-mono-font);
+  font-size: var(--dashboard-period-size);
+  font-weight: var(--dashboard-period-weight);
+  white-space: nowrap;
+}
+
+.description {
+  margin: 0;
+  color: var(--dashboard-heading-secondary);
+  font-family: var(--dashboard-body-font);
+  font-size: var(--dashboard-description-size);
+  line-height: var(--dashboard-description-line-height);
+}
+
+.cardHeadingRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--dashboard-skill-card-heading-margin-bottom);
+}
+
+.radarEmpty {
+  margin: 0;
+  color: var(--dashboard-muted);
+}
+
+.radarExport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--dashboard-radar-min-height);
+}
+
+.radarPreview {
+  height: var(--dashboard-radar-min-height);
+}
+
+.skillLevelStack {
+  display: grid;
+  gap: var(--dashboard-skill-level-gap);
+}
+
+.skillLevelHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--dashboard-skill-level-header-margin-bottom);
+  font-family: var(--dashboard-body-font);
+  font-size: var(--dashboard-skill-label-size);
+}
+
+.skillName {
+  color: var(--dashboard-body-text);
+}
+
+.skillValue {
+  color: var(--dashboard-accent);
+  font-family: var(--dashboard-mono-font);
+  font-size: var(--dashboard-skill-value-size);
+}
+
+.skillTrack {
+  height: var(--dashboard-skill-track-height);
+  overflow: hidden;
+  border-radius: var(--dashboard-pill-radius);
+  background: var(--dashboard-card-border);
+}
+
+.skillFill {
+  width: var(--dashboard-skill-width);
+  height: 100%;
+  border-radius: var(--dashboard-pill-radius);
+  background: var(--dashboard-accent);
+}
+
+.educationHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--dashboard-education-header-margin-bottom);
+}
+
+.educationStack {
+  display: grid;
+  gap: var(--dashboard-education-gap);
+}
+
+.educationItem {
+  padding-top: var(--dashboard-education-item-padding-top);
+  border-top: 1px solid var(--dashboard-card-border);
+}
+
+.educationDegree {
+  margin: 0;
+  color: var(--dashboard-strong-text);
+  font-family: var(--dashboard-display-font);
+  font-size: var(--dashboard-education-degree-size);
+  font-weight: var(--dashboard-section-title-weight);
+}
+
+.educationMeta {
+  margin-top: var(--dashboard-meta-margin-top);
+  color: var(--dashboard-accent);
+  font-family: var(--dashboard-body-font);
+  font-size: var(--dashboard-education-meta-size);
+  font-weight: var(--dashboard-section-meta-weight);
+}
+
+.educationDetails {
+  margin: var(--dashboard-text-block-margin-top) 0 0;
+  color: var(--dashboard-heading-secondary);
+  font-family: var(--dashboard-body-font);
+  font-size: var(--dashboard-education-details-size);
+  line-height: var(--dashboard-education-details-line-height);
+}
+
+.languageBlock {
+  margin-bottom: 0;
+}
+
+.languageBlockWithHobbies {
+  margin-bottom: var(--dashboard-language-block-margin-bottom);
+}
+
+.headingRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.languageList {
+  display: grid;
+  gap: var(--dashboard-language-gap);
+}
+
+.languageRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.languageName {
+  color: var(--dashboard-body-text);
+  font-family: var(--dashboard-body-font);
+  font-size: var(--dashboard-language-name-size);
+  font-weight: var(--dashboard-language-name-weight);
+}
+
+.languageLevel {
+  color: var(--dashboard-muted);
+  font-family: var(--dashboard-mono-font);
+  font-size: var(--dashboard-language-level-size);
+}
+
+.hobbies {
+  margin: 0;
+  color: var(--dashboard-heading-secondary);
+  font-family: var(--dashboard-body-font);
+  font-size: var(--dashboard-hobbies-size);
+  line-height: var(--dashboard-hobbies-line-height);
+}

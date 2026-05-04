@@ -1,0 +1,321 @@
+.page {
+  background: var(--terminal-page-background);
+  padding: var(--terminal-page-padding);
+}
+
+.pagePreview {
+  min-height: var(--terminal-page-min-height);
+}
+
+.pageExport {
+  box-sizing: border-box;
+}
+
+.shell {
+  min-height: 100%;
+  overflow: hidden;
+  padding: var(--terminal-shell-padding);
+  border: 1px solid var(--terminal-shell-border);
+  border-radius: var(--terminal-shell-radius);
+  background: var(--terminal-shell-background);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.55);
+  color: var(--terminal-body-text);
+  font-family: var(--terminal-mono-font);
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--terminal-top-border);
+  color: var(--terminal-muted);
+  font-size: var(--terminal-header-size);
+}
+
+.trafficLights {
+  display: flex;
+  gap: 8px;
+}
+
+.trafficLight {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.trafficLightRed {
+  background: var(--terminal-traffic-red);
+}
+
+.trafficLightYellow {
+  background: var(--terminal-traffic-yellow);
+}
+
+.trafficLightGreen {
+  background: var(--terminal-traffic-green);
+}
+
+.sessionLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.sectionTight {
+  margin-bottom: 12px;
+}
+
+.prompt {
+  margin-bottom: 10px;
+  font-family: var(--terminal-mono-font);
+  font-size: var(--terminal-prompt-size);
+}
+
+.promptUser {
+  color: var(--terminal-prompt);
+}
+
+.promptCommand {
+  color: var(--terminal-command-text);
+}
+
+.outputPanel {
+  padding-left: 14px;
+  border-left: 2px solid var(--terminal-accent-soft);
+  color: var(--terminal-secondary-text);
+}
+
+.heroRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.heroCopy {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  color: var(--terminal-primary-name);
+  font-family: var(--terminal-display-font);
+  font-size: var(--terminal-name-size);
+  font-weight: 700;
+  line-height: var(--terminal-name-line-height);
+}
+
+.title {
+  margin-top: 6px;
+  color: var(--terminal-accent);
+  font-family: var(--terminal-body-font);
+  font-size: var(--terminal-body-size);
+}
+
+.contactList {
+  display: grid;
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.infoLine {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.infoText {
+  font-family: var(--terminal-body-font);
+}
+
+.avatarBlock {
+  flex-shrink: 0;
+}
+
+.avatarLabel {
+  margin-bottom: 8px;
+  color: var(--terminal-muted);
+  font-family: var(--terminal-mono-font);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.avatarFrame {
+  :global([data-canvas-image-frame="true"]) {
+    width: var(--terminal-avatar-size);
+    height: var(--terminal-avatar-size);
+    border: 1px solid var(--terminal-avatar-border);
+    border-radius: 18px;
+    background: var(--terminal-avatar-background);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+  }
+}
+
+.summary {
+  margin: 0;
+  color: var(--terminal-secondary-text);
+  font-family: var(--terminal-body-font);
+  font-size: var(--terminal-summary-size);
+  line-height: var(--terminal-summary-line-height);
+}
+
+.entryStack {
+  display: grid;
+  gap: 16px;
+}
+
+.educationStack {
+  display: grid;
+  gap: 14px;
+}
+
+.experienceTitle {
+  color: var(--terminal-experience-role);
+  font-family: var(--terminal-display-font);
+  font-size: var(--terminal-experience-title-size);
+  font-weight: 700;
+}
+
+.experienceCompany {
+  color: var(--terminal-experience-company);
+  font-family: var(--terminal-body-font);
+  font-weight: 500;
+}
+
+.period {
+  margin-top: 3px;
+  color: var(--terminal-muted);
+  font-family: var(--terminal-body-font);
+  font-size: var(--terminal-experience-meta-size);
+}
+
+.entryBody {
+  margin: 8px 0 0;
+  color: var(--terminal-secondary-text);
+  font-family: var(--terminal-body-font);
+  font-size: var(--terminal-experience-body-size);
+  line-height: 1.72;
+}
+
+.educationTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--terminal-line-text);
+  font-family: var(--terminal-display-font);
+  font-size: var(--terminal-education-title-size);
+  font-weight: 700;
+}
+
+.educationMeta {
+  margin-top: 4px;
+  color: var(--terminal-education-institution);
+  font-family: var(--terminal-body-font);
+  font-size: var(--terminal-education-meta-size);
+}
+
+.educationBody {
+  margin: 7px 0 0;
+  color: var(--terminal-secondary-text);
+  font-family: var(--terminal-body-font);
+  font-size: var(--terminal-education-body-size);
+  line-height: 1.72;
+}
+
+.radarSkills {
+  padding-top: 6px;
+}
+
+.skillBars {
+  display: grid;
+  gap: 12px;
+}
+
+.skillBarHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  color: var(--terminal-line-text);
+  font-family: var(--terminal-body-font);
+  font-size: var(--terminal-skill-text-size);
+}
+
+.skillPercent {
+  color: var(--terminal-accent);
+  font-family: var(--terminal-mono-font);
+  font-size: var(--terminal-skill-percent-size);
+}
+
+.skillTrack {
+  height: 4px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--terminal-skill-track);
+}
+
+.skillFill {
+  width: var(--terminal-skill-width);
+  height: 100%;
+  border-radius: 999px;
+  background: var(--terminal-accent);
+}
+
+.skillChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillChip {
+  padding: 4px 10px;
+  border: 1px solid var(--terminal-accent-soft);
+  border-radius: 999px;
+  background: var(--terminal-skill-chip-background);
+  color: var(--terminal-body-text);
+  font-size: 11.5px;
+}
+
+.extrasLanguages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.extrasLanguagesWithHobbies {
+  margin-bottom: 10px;
+}
+
+.languageText {
+  color: var(--terminal-line-text);
+  font-family: var(--terminal-body-font);
+}
+
+.hobbies {
+  color: var(--terminal-secondary-text);
+  font-family: var(--terminal-body-font);
+  font-size: var(--terminal-education-body-size);
+  line-height: 1.72;
+}
+
+.cursorLine {
+  margin-top: 18px;
+  font-family: var(--terminal-mono-font);
+  font-size: var(--terminal-cursor-font-size);
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: var(--terminal-cursor);
+  animation: var(--terminal-cursor-animation);
+  vertical-align: middle;
+}
